@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost/galerieart09</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        
+        <property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+		<property name="show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="use_sql_comments">true</property>
+		<property name="hbm2ddl.auto">validate</property>
+        
+        
+        <mapping class="pojo.Adresse" />
+        <mapping class="pojo.Artiste" />
+        <mapping class="pojo.Categorie" />
+        <mapping class="pojo.Client" />
+        <mapping class="pojo.Courant" />
+        <mapping class="pojo.DetailFacture" /> 
+        <mapping class="pojo.Exposition" />
+        <mapping class="pojo.Facture" />
+        <mapping class="pojo.Horaire" />
+        <mapping class="pojo.Localexpo" />
+        <mapping class="pojo.Newsletter" />
+        <mapping class="pojo.Oeuvre" />
+        <mapping class="pojo.Participation" />
+        <mapping class="pojo.Pays" />
+        <mapping class="pojo.Reception" />
+        <mapping class="pojo.Situation" />
+        <mapping class="pojo.Technique" />
+        <mapping class="pojo.Transport" />
+        
+        
+    </session-factory>
+</hibernate-configuration>
